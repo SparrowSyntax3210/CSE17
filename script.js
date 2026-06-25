@@ -1,7 +1,8 @@
 function convert() {
-  const usd = document.getElementById("usd").value;
+  const degree = parseFloat(document.getElementById("degree").value);
 
-  const inr = usd * 83.5;
+  const fahrenheit = (degree * 9) / 5 + 32;
 
-  document.getElementById("result").innerText = `INR: ₹${inr}`;
+  document.getElementById("fahrenheit").innerText =
+    `Fahrenheit: ${fahrenheit.toFixed(2)} °F`;
 }
